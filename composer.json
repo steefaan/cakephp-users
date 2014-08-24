@@ -1,0 +1,31 @@
+{
+	"name" : "php-engineer/cakephp-users",
+	"description": "A CakePHP 3 plugin for easy user integration.",
+	"type": "cakephp-plugin",
+	"license" : "MIT",
+	"authors": [
+		{
+			"name": "Stefan Dickmann",
+			"homepage": "http://php-engineer.de"
+		}
+	],
+	"require" : {
+		"php": ">=5.4",
+		"composer/installers": "~1.0",
+		"cakephp/cakephp": "3.0.*-dev",
+		"php-engineer/cakephp-commons": "dev-master"
+	},
+	"autoload": {
+		"psr-4": {
+			"Users\\": "src"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Users\\Test\\": "tests"
+		}
+	},
+	"extra": {
+		"installer-name": "Users"
+	}
+}
